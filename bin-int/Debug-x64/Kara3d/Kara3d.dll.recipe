@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Kara3d\Kara3d\bin\Debug-x64\Kara3d\Kara3d.dll</FullPath>
+      <FullPath>C:\Kara3d\bin\Debug-x64\Kara3d\Kara3d.dll</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
