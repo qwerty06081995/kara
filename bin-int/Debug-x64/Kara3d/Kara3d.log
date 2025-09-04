@@ -1,5 +1,4 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(516,5): warning MSB8004: каталог Intermediate заканчивается не косой чертой.  Этот экземпляр сборки добавит косую черту, поскольку она необходима для правильного определения каталога Intermediate.
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: каталог Output заканчивается не косой чертой.  Этот экземпляр сборки добавит косую черту, поскольку она необходима для правильного определения каталога Output.
-  Test.cpp
-     Создается библиотека C:\Kara3d\Kara3d\bin\Debug-x64\Kara3d\Kara3d.lib и объект C:\Kara3d\Kara3d\bin\Debug-x64\Kara3d\Kara3d.exp
+  Application.cpp
   Kara3d.vcxproj -> C:\Kara3d\Kara3d\bin\Debug-x64\Kara3d\Kara3d.dll

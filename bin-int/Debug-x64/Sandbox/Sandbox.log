@@ -2,6 +2,6 @@
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: каталог Output заканчивается не косой чертой.  Этот экземпляр сборки добавит косую черту, поскольку она необходима для правильного определения каталога Output.
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(516,5): warning MSB8004: каталог Intermediate заканчивается не косой чертой.  Этот экземпляр сборки добавит косую черту, поскольку она необходима для правильного определения каталога Intermediate.
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: каталог Output заканчивается не косой чертой.  Этот экземпляр сборки добавит косую черту, поскольку она необходима для правильного определения каталога Output.
-  Application.cpp
-C:\Kara3d\Kara3d\Sandbox\src\Application.cpp(7,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  SandboxApp.cpp
+C:\Kara3d\Kara3d\Kara3d\src\Kara3d\EntryPoint.h(8,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
   Sandbox.vcxproj -> C:\Kara3d\Kara3d\bin\Debug-x64\Sandbox\Sandbox.exe
