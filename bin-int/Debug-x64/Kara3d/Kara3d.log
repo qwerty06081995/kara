@@ -1,8 +1,0 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(516,5): warning MSB8004: каталог Intermediate заканчивается не косой чертой.  Этот экземпляр сборки добавит косую черту, поскольку она необходима для правильного определения каталога Intermediate.
-C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: каталог Output заканчивается не косой чертой.  Этот экземпляр сборки добавит косую черту, поскольку она необходима для правильного определения каталога Output.
-  Log.cpp
-C:\Kara3d\Kara3d\src\Kara3d\Log.h(19,42): warning C4251: Kara3d::Log::s_CoreLogger: class "std::shared_ptr<spdlog::logger>" должен иметь dll-интерфейс для использования клиентами class "Kara3d::Log"
-C:\Kara3d\Kara3d\vendor\spdlog\include\spdlog\details\registry.h(33,31): message : см. объявление "std::shared_ptr<spdlog::logger>"
-C:\Kara3d\Kara3d\src\Kara3d\Log.h(20,42): warning C4251: Kara3d::Log::s_ClientLogger: class "std::shared_ptr<spdlog::logger>" должен иметь dll-интерфейс для использования клиентами class "Kara3d::Log"
-C:\Kara3d\Kara3d\vendor\spdlog\include\spdlog\details\registry.h(33,31): message : см. объявление "std::shared_ptr<spdlog::logger>"
-  Kara3d.vcxproj -> C:\Kara3d\bin\Debug-x64\Kara3d\Kara3d.dll
