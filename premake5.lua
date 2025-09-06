@@ -4,6 +4,10 @@ workspace "Kara3d"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "Kara3d/vendor/GLFW/include"
+include "Kara3d/vendor/GLFW"
+
 project "Kara3d"
     location "Kara3d"
     kind "SharedLib"
@@ -22,7 +26,14 @@ project "Kara3d"
 
     includedirs {
         "%{prj.name}/src",
-        "%{prj.name}/vendor/spdlog/include"
+        "%{prj.name}/vendor/spdlog/include",
+        "%{IncludeDir.GLFW}"
+    }
+
+    links {
+        "GLFW",
+        "opengl32.lib",
+        "dwmapi.lib"
     }
 
     filter "system:windows"

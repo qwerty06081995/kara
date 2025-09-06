@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Kara3d/Core.h"
+#include "krpch.h"
 
 namespace Kara3d {
 	enum class EventType {

@@ -1,3 +1,9 @@
 [submodule "Kara3d/vendor/spdlog"]
 	path = Kara3d/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+# [submodule "Kara3d/vendor/GLFW"]
+# 	path = Kara3d/vendor/GLFW
+# 	url = https://github.com/glfw/glfw
+[submodule "Kara3d/vendor/GLFW"]
+	path = Kara3d/vendor/GLFW
+	url = https://github.com/TheCherno/GLFW

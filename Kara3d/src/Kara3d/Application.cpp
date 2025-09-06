@@ -2,11 +2,12 @@
 #include "Application.h"
 
 #include "Kara3d/Events/ApplicationEvent.h"
-#include "Kara3d/Log.h"
+#include "GLFW/glfw3.h"
 
 namespace Kara3d {
 	Application::Application()
 	{
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
@@ -14,8 +15,10 @@ namespace Kara3d {
 	}
 
 	void Application::Run() {
-		WindowResizeEvent e(1280, 720);
-		KR_TRACE(e.ToString()); // просто e выводит ошибку 
-		while (true);
+		while (m_Running) {
+			glClearColor(1,0,1,1);
+			glClear(GL_COLOR_BUFFER_BIT);
+			m_Window->OnUpdate();
+		}
 	}
 }

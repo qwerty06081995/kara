@@ -12,6 +12,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Kara3d/Log.h"
+
 
 #ifdef KR_PLATFORM_WINDOWS
 	#include <Windows.h>
