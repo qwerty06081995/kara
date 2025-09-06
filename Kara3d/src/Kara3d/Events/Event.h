@@ -1,8 +1,6 @@
 #pragma once
 
 #include "Kara3d/Core.h"
-#include <string>
-#include <functional>
 
 namespace Kara3d {
 	enum class EventType {

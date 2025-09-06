@@ -1,3 +1,4 @@
+#include "krpch.h"
 #include "Application.h"
 
 #include "Kara3d/Events/ApplicationEvent.h"

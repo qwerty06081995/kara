@@ -1,3 +1,4 @@
+#include "krpch.h"
 #include "Log.h"
 
 namespace Kara3d {

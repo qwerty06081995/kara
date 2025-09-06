@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Kara3d {
 	class KR_API WindowResizeEvent : public Event
 	{

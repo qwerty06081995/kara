@@ -12,6 +12,9 @@ project "Kara3d"
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+    pchheader "krpch.h"
+    pchsource "Kara3d/src/krpch.cpp"
+
     files {
         "%{prj.name}/src/**.h",
         "%{prj.name}/src/**.cpp",

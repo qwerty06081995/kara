@@ -34,6 +34,7 @@
     <ClInclude Include="src\Kara3d\Log.h">
       <Filter>Kara3d</Filter>
     </ClInclude>
+    <ClInclude Include="src\krpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Kara3d\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Kara3d\Log.cpp">
       <Filter>Kara3d</Filter>
     </ClCompile>
+    <ClCompile Include="src\krpch.cpp" />
   </ItemGroup>
 </Project>
