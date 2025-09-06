@@ -4,6 +4,9 @@
     <Filter Include="Kara3d">
       <UniqueIdentifier>{9B5BEDBD-87FD-1794-70B8-2BE85CF99EE4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Kara3d\Events">
+      <UniqueIdentifier>{1F8B4A6F-8B4B-C6A5-5486-0F23C0050B82}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Kara3d.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Kara3d\EntryPoint.h">
       <Filter>Kara3d</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kara3d\Events\ApplicationEvent.h">
+      <Filter>Kara3d\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kara3d\Events\Event.h">
+      <Filter>Kara3d\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kara3d\Events\KeyEvent.h">
+      <Filter>Kara3d\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kara3d\Events\MouseEvent.h">
+      <Filter>Kara3d\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Kara3d\Log.h">
       <Filter>Kara3d</Filter>
