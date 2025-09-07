@@ -6,7 +6,9 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
 IncludeDir["GLFW"] = "Kara3d/vendor/GLFW/include"
+IncludeDir["Glad"] = "Kara3d/vendor/Glad/include"
 include "Kara3d/vendor/GLFW"
+include "Kara3d/vendor/Glad"
 
 project "Kara3d"
     location "Kara3d"
@@ -27,11 +29,13 @@ project "Kara3d"
     includedirs {
         "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include",
-        "%{IncludeDir.GLFW}"
+        "%{IncludeDir.GLFW}",
+        "%{IncludeDir.Glad}"
     }
 
     links {
         "GLFW",
+        "Glad",
         "opengl32.lib",
     }
 
@@ -43,6 +47,7 @@ project "Kara3d"
         defines {
             "KR_PLATFORM_WINDOWS",
             "KR_BUILD_DLL",
+            "GLFW_INCLUDE_NONE",
             "_WINDLL",
         }
 
