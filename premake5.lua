@@ -1,5 +1,6 @@
 workspace "Kara3d"
     architecture "x64"
+    startproject "Sandbox"
     configurations { "Debug", "Release", "Dist" }
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
@@ -10,14 +11,18 @@ IncludeDir["GLFW"] = "Kara3d/vendor/GLFW/include"
 IncludeDir["Glad"] = "Kara3d/vendor/Glad/include"
 IncludeDir["ImGui"] = "Kara3d/vendor/imgui"
 
-include "Kara3d/vendor/GLFW"
-include "Kara3d/vendor/Glad"
-include "Kara3d/vendor/imgui"
+group "Dependencies"
+	include "Hazel/vendor/GLFW"
+	include "Hazel/vendor/Glad"
+	include "Hazel/vendor/imgui"
+
+group ""
 
 project "Kara3d"
     location "Kara3d"
     kind "SharedLib"
     language "C++"
+    staticruntime "off"
 
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -47,7 +52,7 @@ project "Kara3d"
 
     filter "system:windows"
         cppdialect "C++17"
-        staticruntime "On"
+        
         systemversion "latest"
 
         defines {
@@ -58,22 +63,22 @@ project "Kara3d"
         }
 
         postbuildcommands {
-            "{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox"
+            ("{COPY} %{cfg.buildtarget.relpath} \"../bin/" .. outputdir .. "/Sandbox/\"")
         }
 
     filter "configurations:Debug"
         defines "KR_DEBUG"
-        buildoptions "/MDd"
+        runtime "Debug"
         symbols "On"
 
     filter "configurations:Release"
         defines "KR_RELEASE"
-        buildoptions "/MD"
+        runtime "Release"
         optimize "On"
 
     filter "configurations:Dist"
         defines "KR_DIST"
-        buildoptions "/MD"
+        runtime "Release"
         optimize "On"
 
     filter "action:vs*"
@@ -83,6 +88,7 @@ project "Sandbox"
     location "Sandbox"
     kind "ConsoleApp"
     language "C++"
+    staticruntime "off"
 
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -103,7 +109,7 @@ project "Sandbox"
 
     filter "system:windows"
         cppdialect "C++17"
-        staticruntime "On"
+        
         systemversion "10.0.22621.0"
 
         defines {
@@ -113,17 +119,17 @@ project "Sandbox"
 
     filter "configurations:Debug"
 		defines "KR_DEBUG"
-		buildoptions "/MDd"
+		runtime "Debug"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "KR_RELEASE"
-		buildoptions "/MD"
+		runtime "Release"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "KR_DIST"
-		buildoptions "/MD"
+		runtime "Release"
 		optimize "On"
 
     filter "action:vs*"

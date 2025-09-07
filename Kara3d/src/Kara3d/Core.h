@@ -11,6 +11,11 @@
 	#error KR on support Windows
 #endif // KR_PLATFORM_WINDOWS
 
+#ifdef KR_DEBUG
+	#define KR_ENABLE_ASSERTS
+#endif // KR_DEBUG
+
+
 #ifdef KR_ENABLE_ASSERTS
 	#define KR_ASSERT(x, ...) { if(!(x)) KR_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); }
 	#define KR_CORE_ASSERT(x, ...) { if(!(x)) KR_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); }
