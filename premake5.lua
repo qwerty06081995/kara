@@ -52,14 +52,17 @@ project "Kara3d"
 
     filter "configurations:Debug"
         defines "KR_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
 
     filter "configurations:Release"
         defines "KR_RELEASE"
+        buildoptions "/MD"
         optimize "On"
 
     filter "configurations:Dist"
         defines "KR_DIST"
+        buildoptions "/MD"
         optimize "On"
 
     filter "action:vs*"
@@ -98,16 +101,19 @@ project "Sandbox"
         }
 
     filter "configurations:Debug"
-        defines "KR_DEBUG"
-        symbols "On"
+		defines "KR_DEBUG"
+		buildoptions "/MDd"
+		symbols "On"
 
-    filter "configurations:Release"
-        defines "KR_RELEASE"
-        optimize "On"
+	filter "configurations:Release"
+		defines "KR_RELEASE"
+		buildoptions "/MD"
+		optimize "On"
 
-    filter "configurations:Dist"
-        defines "KR_DIST"
-        optimize "On"
+	filter "configurations:Dist"
+		defines "KR_DIST"
+		buildoptions "/MD"
+		optimize "On"
 
     filter "action:vs*"
         buildoptions { "/utf-8" }

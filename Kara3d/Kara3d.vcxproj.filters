@@ -37,6 +37,12 @@
     <ClInclude Include="src\Kara3d\Events\MouseEvent.h">
       <Filter>Kara3d\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Kara3d\Layer.h">
+      <Filter>Kara3d</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kara3d\LayerStack.h">
+      <Filter>Kara3d</Filter>
+    </ClInclude>
     <ClInclude Include="src\Kara3d\Log.h">
       <Filter>Kara3d</Filter>
     </ClInclude>
@@ -50,6 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Kara3d\Application.cpp">
+      <Filter>Kara3d</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kara3d\Layer.cpp">
+      <Filter>Kara3d</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kara3d\LayerStack.cpp">
       <Filter>Kara3d</Filter>
     </ClCompile>
     <ClCompile Include="src\Kara3d\Log.cpp">

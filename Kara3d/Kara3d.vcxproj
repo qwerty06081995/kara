@@ -84,7 +84,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/MDd /utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -111,7 +111,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/MD /utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -139,7 +139,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/MD /utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -163,6 +163,8 @@
     <ClInclude Include="src\Kara3d\Events\Event.h" />
     <ClInclude Include="src\Kara3d\Events\KeyEvent.h" />
     <ClInclude Include="src\Kara3d\Events\MouseEvent.h" />
+    <ClInclude Include="src\Kara3d\Layer.h" />
+    <ClInclude Include="src\Kara3d\LayerStack.h" />
     <ClInclude Include="src\Kara3d\Log.h" />
     <ClInclude Include="src\Kara3d\Window.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
@@ -170,6 +172,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Kara3d\Application.cpp" />
+    <ClCompile Include="src\Kara3d\Layer.cpp" />
+    <ClCompile Include="src\Kara3d\LayerStack.cpp" />
     <ClCompile Include="src\Kara3d\Log.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\krpch.cpp">
