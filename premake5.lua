@@ -5,10 +5,14 @@ workspace "Kara3d"
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
+
 IncludeDir["GLFW"] = "Kara3d/vendor/GLFW/include"
 IncludeDir["Glad"] = "Kara3d/vendor/Glad/include"
+IncludeDir["ImGui"] = "Kara3d/vendor/imgui"
+
 include "Kara3d/vendor/GLFW"
 include "Kara3d/vendor/Glad"
+include "Kara3d/vendor/imgui"
 
 project "Kara3d"
     location "Kara3d"
@@ -30,12 +34,14 @@ project "Kara3d"
         "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include",
         "%{IncludeDir.GLFW}",
-        "%{IncludeDir.Glad}"
+        "%{IncludeDir.Glad}",
+        "%{IncludeDir.ImGui}"
     }
 
     links {
         "GLFW",
         "Glad",
+        "ImGui",
         "opengl32.lib",
     }
 

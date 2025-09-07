@@ -4,6 +4,8 @@
 #include "Kara3d/Layer.h"
 #include "Kara3d/Log.h"
 
+#include "Kara3d/ImGui/ImGuiLayer.h"
+
 // ====== Точка входа
 #include "Kara3d/EntryPoint.h"
 // ====== Точка входа

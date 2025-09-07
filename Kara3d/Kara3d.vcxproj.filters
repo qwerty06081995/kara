@@ -7,8 +7,14 @@
     <Filter Include="Kara3d\Events">
       <UniqueIdentifier>{1F8B4A6F-8B4B-C6A5-5486-0F23C0050B82}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Kara3d\ImGui">
+      <UniqueIdentifier>{05D9D0BD-F13B-6062-9AC1-981886032CE5}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Platform\Windows">
       <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
@@ -37,6 +43,9 @@
     <ClInclude Include="src\Kara3d\Events\MouseEvent.h">
       <Filter>Kara3d\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Kara3d\ImGui\ImGuiLayer.h">
+      <Filter>Kara3d\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Kara3d\Layer.h">
       <Filter>Kara3d</Filter>
     </ClInclude>
@@ -49,6 +58,9 @@
     <ClInclude Include="src\Kara3d\Window.h">
       <Filter>Kara3d</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>Platform\Windows</Filter>
     </ClInclude>
@@ -58,6 +70,9 @@
     <ClCompile Include="src\Kara3d\Application.cpp">
       <Filter>Kara3d</Filter>
     </ClCompile>
+    <ClCompile Include="src\Kara3d\ImGui\ImGuiLayer.cpp">
+      <Filter>Kara3d\ImGui</Filter>
+    </ClCompile>
     <ClCompile Include="src\Kara3d\Layer.cpp">
       <Filter>Kara3d</Filter>
     </ClCompile>
@@ -66,6 +81,9 @@
     </ClCompile>
     <ClCompile Include="src\Kara3d\Log.cpp">
       <Filter>Kara3d</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>Platform\Windows</Filter>

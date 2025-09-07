@@ -10,3 +10,6 @@
 [submodule "Kara3d/vendor/GLFW"]
 	path = Kara3d/vendor/GLFW
 	url = https://github.com/glfw/glfw
+[submodule "Kara3d/vendor/imgui"]
+	path = Kara3d/vendor/imgui
+	url = https://github.com/TheCherno/imgui

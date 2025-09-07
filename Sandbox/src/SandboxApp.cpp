@@ -18,6 +18,7 @@ class SanboxApp : public Kara3d::Application
 public:
 	SanboxApp() {
 		PushLayer(new ExampleLayer());
+		PushOverlay(new Kara3d::ImGuiLayer());
 	}
 	~SanboxApp() {}
 };
