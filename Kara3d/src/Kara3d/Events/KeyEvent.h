@@ -14,7 +14,7 @@ namespace Kara3d {
 		int m_KeyCode;
 	};
 
-	class KR_API KeyPressedEvent : public Key Event {
+	class KR_API KeyPressedEvent : public KeyEvent {
 	public:
 		KeyPressedEvent(int keyCode, int repeatCount) : KeyEvent(keyCode), m_RepeatCount(repeatCount) {}
 		inline int GetRepeatCount() const { return m_RepeatCount; }
@@ -28,12 +28,12 @@ namespace Kara3d {
 		EVENT_CLASS_TYPE(KeyPressed)
 	private:
 		int m_RepeatCount;
-	}
+	};
 
 	class KR_API KeyReleasedEvent : public KeyEvent
 	{
 	public:
-		KeyReleasedEvent(const KeyCode keycode)
+		KeyReleasedEvent(int keycode)
 			: KeyEvent(keycode) {}
 
 		std::string ToString() const override

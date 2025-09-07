@@ -33,7 +33,6 @@ project "Kara3d"
     links {
         "GLFW",
         "opengl32.lib",
-        "dwmapi.lib"
     }
 
     filter "system:windows"
